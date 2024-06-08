@@ -1,0 +1,27 @@
+{
+  "name": "Panopto Speed Control",
+  "description": "Simple extension to control panopto playback speed",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "panoptoIcon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.panopto.eu/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

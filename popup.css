@@ -1,0 +1,19 @@
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#label {
+  text-align: center;
+}
+
+#myRange {
+  width: 70%;
+  align-self: center;
+  margin-bottom: 5px;
+}
+
+#apply {
+  width: fit-content;
+  align-self: center;
+}
